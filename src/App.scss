@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.nav {
+  display: flex;
+  font-family: 'Poiret One', cursive;
+  &__btn {
+    font-family: 'Poiret One', cursive;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    &_ua {
+      background-image: url("images/flag-ua.png");
+    }
+    &_en {
+      background-image: url("images/flag-en.png");
+    }
+  }
+}
