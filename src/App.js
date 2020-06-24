@@ -14,8 +14,12 @@ const App = () => {
     <>
       <nav className="nav">
         <NavBar lang={ lang }/>
-        <button className="nav__btn nav__btn_ua" onClick={() => setLang('ua-UA')}>UA</button>
-        <button className="nav__btn nav__btn_en" onClick={() => setLang('en-US')}>EN</button>
+        <button className="nav__btn nav__btn_ua" onClick={() => setLang('ua-UA')}>
+            <img src="images/flag-ua.png" alt="ua"/>
+        </button>
+        <button className="nav__btn nav__btn_en" onClick={() => setLang('en-US')}>
+            <img src="images/flag-en.png" alt="en"/>
+        </button>
       </nav>
       <Switch>
         <Route path="/" exact component={MainPage} />
