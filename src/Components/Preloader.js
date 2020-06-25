@@ -1,7 +1,12 @@
 import React from "react";
+import '../Styles/Preloader.scss'
 
 export const Preloader = (props) => {
     return (
-        <button onClick={props.set}>start</button>
+        <div className="text-container">
+            <h1>Private Gynecology Practice</h1>
+            <button onClick={props.set}>start</button>
+        </div>
+
     )
 }

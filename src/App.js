@@ -16,7 +16,7 @@ const App = () => {
     const [preloader, setPreloader] = useState(true);
 
     const set = () => {
-        setPreloader(prevState => !prevState)
+        setPreloader(false)
     }
     const handleMouseEnter = () => {
         setLangVisibility('grayscale(0)')
