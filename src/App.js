@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Switch, Route} from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {Route} from 'react-router-dom';
 import './App.scss';
 import {NavBar} from "./Components/NavBar";
 import {MainPage} from "./Components/MainPage";
@@ -9,12 +9,21 @@ import {Map} from "./Components/Map";
 import {Appointment} from "./Components/Appointment";
 import cn from 'classnames'
 import {Preloader} from "./Components/Preloader";
+import {AnimatedSwitch} from "react-router-transition";
 
 const App = () => {
     const [lang, setLang] = useState(navigator.language);
     const [langVisibility, setLangVisibility] = useState('grayscale(80%)')
     const [preloader, setPreloader] = useState(true);
 
+    useEffect(() => {
+        if (sessionStorage.getItem('preloader') === null) {
+            sessionStorage.setItem('preloader', true)
+            setPreloader(true)
+        } else {
+            setPreloader(false)
+        }
+    }, [])
     const set = () => {
         setPreloader(false)
     }
@@ -35,7 +44,9 @@ const App = () => {
                     <nav
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
-                        className="nav">
+                        className="nav"
+                    >
+                        <img className="nav__logo" src="images/logo.png" alt="logo"/>
                         <NavBar lang={lang}/>
                         <div className="nav__btn_wrapper" style={{filter: `${langVisibility}`}}>
                             <button
@@ -56,13 +67,18 @@ const App = () => {
                             </button>
                         </div>
                     </nav>
-                    <Switch>
+                    <AnimatedSwitch
+                        atEnter={{ opacity: 0 }}
+                        atLeave={{ opacity: 0 }}
+                        atActive={{ opacity: 1 }}
+                        className="switch-wrapper"
+                    >
                         <Route path="/" exact component={MainPage}/>
                         <Route path="/about" exact component={About}/>
                         <Route path="/faq" exact component={FAQ}/>
                         <Route path="/find-us" exact component={Map}/>
                         <Route path="/make-appointment" exact component={Appointment}/>
-                    </Switch>
+                    </AnimatedSwitch>
                 </>
             )}
             </>

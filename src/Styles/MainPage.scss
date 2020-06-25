@@ -1,0 +1,8 @@
+.MainPage {
+  &__bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: calc(98vh - 30px)
+  }
+}

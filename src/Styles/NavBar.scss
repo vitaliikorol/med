@@ -1,11 +1,14 @@
 .NavBar {
-  width: 90%;
+  width: 80vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
+  z-index: 2;
+  padding: 0 2vmin;
   &__link {
     padding: 5px 10px;
+    margin: 0 2vmin;
     font-weight: bolder;
     letter-spacing: 1px;
     text-decoration: none;
@@ -14,32 +17,30 @@
     display: inline-block;
     overflow: hidden;
     color: #333;
-    transition: color .3s ease-out;
-    border-radius: 3px;
-
     &_active {
       border-radius: 3px;
-      background-image: linear-gradient(60deg, black 0%, grey 100%);
       color: white;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      transform: translateY(calc(100% - 2px));
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(60deg, black 0%, grey 100%);
-      transition: transform .25s ease-out;
+      transition: left 1s;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: translateY(calc(100% - 2px));
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(60deg, black 0%, grey 100%);
+        animation: anim 0.4s;
+      }
     }
     &:hover {
       color: #fff;
-      &::before {
-        transform: translateY(0);
-        transition: transform .25s ease-out;
-      }
     }
   }
+}
+
+@keyframes anim {
+  from {left: -100%}
+  to {left: 0}
 }
