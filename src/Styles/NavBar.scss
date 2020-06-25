@@ -1,6 +1,45 @@
 .NavBar {
-  width: 50%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
+  &__link {
+    padding: 5px 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    overflow: hidden;
+    color: #333;
+    transition: color .3s ease-out;
+    border-radius: 3px;
+
+    &_active {
+      border-radius: 3px;
+      background-image: linear-gradient(60deg, black 0%, grey 100%);
+      color: white;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      transform: translateY(calc(100% - 2px));
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(60deg, black 0%, grey 100%);
+      transition: transform .25s ease-out;
+    }
+    &:hover {
+      color: #fff;
+      &::before {
+        transform: translateY(0);
+        transition: transform .25s ease-out;
+      }
+    }
+  }
 }

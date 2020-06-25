@@ -7,6 +7,7 @@ export const NavBar = (props) => {
   return (
     <div className="NavBar">
       <NavLink
+          exact
           className="NavBar__link"
           activeClassName="NavBar__link_active"
           to="/">
