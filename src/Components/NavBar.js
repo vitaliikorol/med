@@ -1,25 +1,41 @@
 import React from "react";
 import {NavLink} from 'react-router-dom'
+import '../Styles/NavBar.scss'
 
 export const NavBar = (props) => {
   const lang = props.lang;
   return (
-    <>
-      <NavLink to="/">
+    <div className="NavBar">
+      <NavLink
+          className="NavBar__link"
+          activeClassName="NavBar__link_active"
+          to="/">
         {lang === 'en-US' ? `Home` : `Головна`}
       </NavLink>
-      <NavLink to="/about">
+      <NavLink
+          className="NavBar__link"
+          activeClassName="NavBar__link_active"
+          to="/about">
         {lang === 'en-US' ? `About us` : `Про нас`}
       </NavLink>
-      <NavLink to="/make-appointment">
+      <NavLink
+          className="NavBar__link"
+          activeClassName="NavBar__link_active"
+          to="/make-appointment">
         {lang === 'en-US' ? `Make an appointment` : `Зробити замовлення`}
       </NavLink>
-      <NavLink to="/find-us">
+      <NavLink
+          className="NavBar__link"
+          activeClassName="NavBar__link_active"
+          to="/find-us">
         {lang === 'en-US' ? `Find us` : `Знайти нас`}
       </NavLink>
-      <NavLink to="/faq">
+      <NavLink
+          className="NavBar__link"
+          activeClassName="NavBar__link_active"
+          to="/faq">
         {lang === 'en-US' ? `F.A.Q` : `Питання i вiдповiдi`}
       </NavLink>
-    </>
+    </div>
   )
 }
