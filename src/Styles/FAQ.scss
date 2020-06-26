@@ -1,14 +1,21 @@
 @import "../Helpers/vars";
 
-.Appointment {
+.FAQ {
   width: 100%;
   height: calc(100vh - 56px);
   &__bg {
-    background: url("../images/appointment-bg.png") no-repeat left bottom;
+    //background-image: url("../images/faq.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
     background-size: contain;
     width: 100%;
     height: calc(100vh - 56px);
     position: absolute;
     animation: page-transition 2s;
+    z-index: 0;
   }
+  &__m {
+    text-align: center;
+  }
+
 }
