@@ -9,7 +9,7 @@ export const NavBar = (props) => {
     const lang = props.lang;
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="NavBar">
-            <Navbar.Brand href="/"><img className="nav__logo" src={logo} alt="logo"/></Navbar.Brand>
+            <NavLink to="/"><img className="nav__logo" src={logo} alt="logo"/></NavLink>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
