@@ -3,12 +3,13 @@ import {NavLink} from 'react-router-dom'
 import '../Styles/NavBar.scss'
 import {Nav, Navbar, NavDropdown, Button, DropdownButton} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../images/logo.png'
 
 export const NavBar = (props) => {
     const lang = props.lang;
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="NavBar">
-            <Navbar.Brand href="/"><img className="nav__logo" src="images/logo.png" alt="logo"/></Navbar.Brand>
+            <Navbar.Brand href="/"><img className="nav__logo" src={logo} alt="logo"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
@@ -40,7 +41,9 @@ export const NavBar = (props) => {
 
                     <NavDropdown title={lang === 'en-US' ? `Additional info` : `Допомiжна iнформацiя`} id="collasible-nav-dropdown">
                         {/*<NavDropdown.Divider/>*/}
-                        <NavDropdown.Item>
+                        <NavDropdown.Item
+                            bsPrefix="dropdown-item dd-item"
+                        >
                             <NavLink
                                 className="NavBar__link"
                                 activeClassName="NavBar__link_active"
@@ -48,7 +51,16 @@ export const NavBar = (props) => {
                                 {lang === 'en-US' ? `F.A.Q` : `Питання i вiдповiдi`}
                             </NavLink>
                         </NavDropdown.Item>
-
+                        <NavDropdown.Item
+                            bsPrefix="dropdown-item dd-item"
+                        >
+                            <NavLink
+                                className="NavBar__link"
+                                activeClassName="NavBar__link_active"
+                                to="/price">
+                                {lang === 'en-US' ? `Price` : `Цiни`}
+                            </NavLink>
+                        </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <DropdownButton

@@ -1,10 +1,10 @@
 @import "../Helpers/vars";
 
-.FAQ {
+.Price {
   width: 100%;
   height: calc(100vh - 56px);
   &__bg {
-    background-image: url("../images/faq.png");
+    background-image: url("../images/price-bg.png");
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;

@@ -7,7 +7,7 @@ export const Contacts = (props) => {
             <div className="Contacts__bg"></div>
             <ul>
                 <li>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100007666564211">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100007666564211">
                         <i className="fa fa-facebook" aria-hidden="true"></i>
                         {props.lang === 'en-US' ? (
                             <span> - Facebook</span>

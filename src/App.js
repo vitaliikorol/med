@@ -5,10 +5,11 @@ import {NavBar} from "./Components/NavBar";
 import {MainPage} from "./Components/MainPage";
 import {Contacts} from "./Components/Contacts";
 import {FAQ} from "./Components/FAQ";
-import {Map} from "./Components/Map";
+import {Find} from "./Components/Find";
 import {Appointment} from "./Components/Appointment";
 import {Preloader} from "./Components/Preloader";
 import {AnimatedSwitch} from "react-router-transition";
+import {Price} from "./Components/Price";
 
 const App = () => {
     const [lang, setLang] = useState(navigator.language);
@@ -41,8 +42,9 @@ const App = () => {
                         <Route path="/" exact component={MainPage}/>
                         <Route path="/contacts" exact component={() => <Contacts lang={lang} />}/>
                         <Route path="/faq" exact component={FAQ}/>
-                        <Route path="/find-us" exact component={Map}/>
+                        <Route path="/find-us" exact component={Find}/>
                         <Route path="/make-appointment" exact component={Appointment}/>
+                        <Route path="/price" exact component={Price}/>
                     </AnimatedSwitch>
                 </div>
             )}

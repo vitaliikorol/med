@@ -1,0 +1,32 @@
+@import "../Helpers/vars";
+
+.FindUs {
+  width: 100%;
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__bg {
+    background: url("../images/find-us-bg.jpg") no-repeat left bottom;
+    background-size: contain;
+    width: 100%;
+    height: calc(100vh - 56px);
+    position: absolute;
+    animation: page-transition 2s;
+  }
+}
+
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:50vmin;
+  width:90vmin;
+
+  transition: opacity 2s;
+}
+.gmap_canvas {
+  overflow:hidden;
+  height:50vmin;
+  width:90vmin;
+  box-shadow: 0 0 5vmin 5vmin #282c34;
+}
