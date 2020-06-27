@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/med/static/css/main.40b5cf94.chunk.css",
-    "main.js": "/med/static/js/main.226d6718.chunk.js",
-    "main.js.map": "/med/static/js/main.226d6718.chunk.js.map",
+    "main.css": "/med/static/css/main.cfb3278d.chunk.css",
+    "main.js": "/med/static/js/main.53bec026.chunk.js",
+    "main.js.map": "/med/static/js/main.53bec026.chunk.js.map",
     "runtime-main.js": "/med/static/js/runtime-main.950ed923.js",
     "runtime-main.js.map": "/med/static/js/runtime-main.950ed923.js.map",
     "static/css/2.af3c1da9.chunk.css": "/med/static/css/2.af3c1da9.chunk.css",
     "static/js/2.f27f9c28.chunk.js": "/med/static/js/2.f27f9c28.chunk.js",
     "static/js/2.f27f9c28.chunk.js.map": "/med/static/js/2.f27f9c28.chunk.js.map",
     "index.html": "/med/index.html",
-    "precache-manifest.31174a81887fd7d25c60ea9fa19cac45.js": "/med/precache-manifest.31174a81887fd7d25c60ea9fa19cac45.js",
+    "precache-manifest.ad099eea4f7fc24befe8bdc5ca6d3bfc.js": "/med/precache-manifest.ad099eea4f7fc24befe8bdc5ca6d3bfc.js",
     "service-worker.js": "/med/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/med/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.40b5cf94.chunk.css.map": "/med/static/css/main.40b5cf94.chunk.css.map",
+    "static/css/main.cfb3278d.chunk.css.map": "/med/static/css/main.cfb3278d.chunk.css.map",
     "static/js/2.f27f9c28.chunk.js.LICENSE.txt": "/med/static/js/2.f27f9c28.chunk.js.LICENSE.txt",
     "static/media/Appointment.scss": "/med/static/media/appointment-bg.4a8d6fec.png",
     "static/media/Contacts.scss": "/med/static/media/contacts-bg.373f29d4.png",
-    "static/media/FAQ.scss": "/med/static/media/faq.c9d29fa7.png",
+    "static/media/FAQ.scss": "/med/static/media/faq.3554099c.png",
     "static/media/Find.scss": "/med/static/media/find-us-bg.b6b22874.jpg",
-    "static/media/MainPage.scss": "/med/static/media/main-page-bg.3554099c.png",
+    "static/media/MainPage.scss": "/med/static/media/main-page-bg.c9d29fa7.png",
     "static/media/Preloader.scss": "/med/static/media/preloader-bg.6039ae40.jpg",
     "static/media/Price.scss": "/med/static/media/price-bg.10e98977.png"
   },
@@ -26,7 +26,7 @@
     "static/js/runtime-main.950ed923.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.f27f9c28.chunk.js",
-    "static/css/main.40b5cf94.chunk.css",
-    "static/js/main.226d6718.chunk.js"
+    "static/css/main.cfb3278d.chunk.css",
+    "static/js/main.53bec026.chunk.js"
   ]
 }
