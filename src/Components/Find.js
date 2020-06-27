@@ -4,7 +4,7 @@ import '../Styles/Find.scss'
 export const Find = () => {
     const [opacity, setOpacity] = useState(0)
     useEffect(() => {
-        setTimeout(() => setOpacity(1), 3000)
+        setTimeout(() => setOpacity(1), 2000)
     })
     return (
         <section className="FindUs">
